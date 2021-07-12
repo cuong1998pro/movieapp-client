@@ -1,0 +1,8 @@
+<mat-icon *ngFor="let start of starArr; let index = index"
+    (mouseenter)="starHover(index)"
+    (mouseleave)="starLeave()"
+    (click)="starClick(index)"
+    [ngClass]="{checked: hoverIndex > index}"
+>
+    star
+</mat-icon>

@@ -1,0 +1,25 @@
+<app-generic-list [list]="movies">
+  <div class="movies-container" content>
+    <div class="movie-container" *ngFor="let movie of movies; let index = index">
+      <div style="
+      background: url('https://cdn.dribbble.com/users/1186261/screenshots/3718681/_______.gif')  no-repeat center;
+      background-size: cover; ">
+      <a>
+        <img src="{{movie.poster}}" class="poster-img" alt="No image">
+      </a>
+      </div>
+      <p>
+        <a>{{movie.name | uppercase}}</a>
+      </p>
+      <div>
+        <a mat-flat-button color="primary">
+          Edit
+        </a>
+        <button mat-flat-button color="warn" type="button">
+          Delete
+        </button>
+      </div>
+    </div>
+  </div>
+</app-generic-list>
+

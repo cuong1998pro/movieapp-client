@@ -1,0 +1,8 @@
+.checked{
+    color: yellow;
+    /* font-size: 1.1rem; */
+}
+
+mat-icon{
+    cursor: pointer;
+}

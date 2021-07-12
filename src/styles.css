@@ -1,1 +1,30 @@
 /* You can add global styles to this file, and also import other style files */
+
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+sub{ color: red; }
+button {margin-right: 10px !important;}
+.mat-form-field-infix {
+    padding:13px 0 !important; 
+    width: 250px !important; 
+}
+
+form{
+    width: 100% !important;
+}
+
+form mat-form-field
+{
+    margin-right: 10px !important;
+}
+
+.checkbox-container{
+    margin-bottom: 15px;
+}
+
+.checkbox-container .checkbox{
+    margin-right: 15px;
+}
+
+mat-icon{
+    cursor: pointer;
+}

@@ -1,0 +1,9 @@
+<img *ngIf="!list"
+  src="https://media4.giphy.com/media/3oEjI6SIIHBdRxXI40/giphy.gif?cid=ecf05e47vl9wzv4ff1u1f7q0nx9cp9ld8v973dizqdnh1wla&rid=giphy.gif&ct=g"
+  width="auto" alt="loading">
+
+<p *ngIf="list?.length === 0">There are not movies</p>
+
+<ng-container *ngIf="list && list.length > 0">
+  <ng-content select="[content]"></ng-content>
+</ng-container>
